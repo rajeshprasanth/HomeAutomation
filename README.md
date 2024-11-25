@@ -4,7 +4,7 @@ Welcome to the **HomeAutomation** repository! This repository contains various s
 
 ## Projects
 
-### 1. [Relay Timer with DS1307 RTC](./Relay_Timer_with_DS1307_RTC)
+### 1. [Arduino Relay Timer](./ArduinoRelayTimer)
 This project demonstrates how to control a relay at a specific time every day using an Arduino Nano and a DS1307 RTC module. The relay remains active for a predefined duration before turning off.
 
 #### Features
