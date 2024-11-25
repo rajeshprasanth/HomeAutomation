@@ -3,19 +3,21 @@
 
 RTC_DS1307 rtc;
 
-const int relayPin = 8;  // Pin connected to relay
+const int relayPin = 8;   // Pin connected to relay
+const int buzzerPin = 7;  // Pin connected to buzzer
 const int targetHour = 9; // Target time (10 AM)
-const int targetMinute = 0;
+const int targetMinute = 40;
 const int targetSecond = 0;
-const int holdTime = 30000;
-
+const int holdTime = 30000; // Time the relay will stay on in milliseconds
 
 bool relayActive = false; // To track if the relay is active
 unsigned long relayStartTime = 0; // To track when the relay was activated
 
 void setup() {
   pinMode(relayPin, OUTPUT);
+  pinMode(buzzerPin, OUTPUT);
   digitalWrite(relayPin, LOW); // Ensure relay is off initially
+  digitalWrite(buzzerPin, LOW); // Ensure buzzer is off initially
 
   Serial.begin(9600);
 
@@ -65,6 +67,7 @@ void loop() {
   // Check if it's the target time
   if (now.hour() == targetHour && now.minute() == targetMinute && now.second() == targetSecond && !relayActive) {
     digitalWrite(relayPin, HIGH); // Turn on relay
+    digitalWrite(buzzerPin, HIGH); // Activate buzzer
     relayActive = true; // Set relay as active
     relayStartTime = millis(); // Record the start time
     Serial.println("ACTIVE");
@@ -72,6 +75,7 @@ void loop() {
   // Check if the relay has been active for Hold time
   else if (relayActive && millis() - relayStartTime >= holdTime) {
     digitalWrite(relayPin, LOW); // Turn off relay
+    digitalWrite(buzzerPin, LOW); // Deactivate buzzer
     relayActive = false; // Reset relay status
     Serial.println("INACTIVE");
   } 
