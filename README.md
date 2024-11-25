@@ -28,4 +28,5 @@ This project demonstrates how to control a relay at a specific time every day us
 - Status: In Progress 🟡
 
 ## Repository Structure
+HomeAutomation/ │ ├── Relay_Timer_with_DS1307_RTC/ # Relay timer project code and details │ ├── README.md # Documentation for Relay Timer │ └── main_code.ino # Arduino code │ ├── Future_Project/ # Placeholder for future projects │ └── README.md # Documentation for future projects │ └── README.md # Master documentation (this file)
 
