@@ -80,6 +80,10 @@ Target Time: 09:00:00 || Current Time: 09:00:30 || Trigger Status: INACTIVE
 2. Go to **Sketch > Include Library > Manage Libraries**.
 3. Search for `RTClib` and click **Install**.
 
+## Simulation Results
+
+You can view the simulation results for this project on [Wokwi](https://wokwi.com/projects/415496432298356737).
+
 
 ## Changes:
 - The **Buzzer** has been added to the features and setup instructions.
