@@ -52,5 +52,5 @@ Contributions are welcome! If you have ideas or enhancements, feel free to fork 
 ## License
 
 This repository is open-source and distributed under the **MIT License**. Feel free to use, modify, and distribute the projects.
-This is a reminder that Cisco Jabber will be discontinued as of November 30, 2024, and we will transition to Microsoft Teams Phone for making domestic and international calls. All Cisco Jabber users should have received an onboarding email last week with instructions on setting up MS Teams Phone. Please follow those instructions to activate your setup. You can start using MS Teams Phone immediately, and if you need guidance, refer to the following link: How to Use MS Teams Phone for Calls. If you have not received the onboarding email or need further assistance, please contact [support/contact details].
+
 
